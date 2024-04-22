@@ -54,14 +54,14 @@ const About: React.FC = () => {
               <div className="gap-32">
                 <div className="w-full h-[200px] gap-24px">
                   <div className="w-full h-[80px] sm:h-[64px] gap-8px md:w-[593px] md:h-[80px] md:gap-8px ">
-                    <h2 className="text-xs md:text-sm font-sans mb-2 font-extralight ">
+                    <h2 className="text-xs md:text-sm font-sans mb-2 font-extralight text-black">
                       ABOUT — PERSONAL
                     </h2>
                     <div className="flex flex-col md:items-left ">
                       <h1 className="text-center md:text-left w-full">
                         <div className="md:inline-block">
-                          <span className="text-3xl md:text-5xl font-normal font-sans">¡Hello!</span>
-                          <span className="text-3xl md:text-5xl font-sans ml-1 font-semibold">{h1Text}</span>
+                          <span className="text-3xl md:text-5xl font-normal font-sans text-black">¡Hello!</span>
+                          <span className="text-3xl md:text-5xl font-sans ml-1 font-semibold text-black">{h1Text}</span>
                         </div>
                       </h1>
                     </div>

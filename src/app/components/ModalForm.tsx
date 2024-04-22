@@ -74,19 +74,19 @@ const ModalForm: React.FC<ModalFormProps> = ({ onClose, onDarkModeChange }) => {
           placeholder="Fill your text after ¡Hello!"
           value={h1Text}
           onChange={(e) => setH1Text(e.target.value)}
-          className={`border border-gray-300 rounded px-4 py-2 mb-4 block w-full ${darkMode ? 'text-white bg-gray-800' : ''}`}
+          className={`border border-gray-300 rounded px-4 py-2 mb-4 block w-full ${darkMode ? 'text-white bg-gray-800' : 'text-black'}`}
         />
         <textarea
           placeholder="Fill your description"
           value={paragraphText}
           onChange={(e) => setParagraphText(e.target.value)}
-          className={`border border-gray-300 rounded px-4 py-2 mb-4 block w-full ${darkMode ? 'text-white bg-gray-800' : ''}`}
+          className={`border border-gray-300 rounded px-4 py-2 mb-4 block w-full ${darkMode ? 'text-white bg-gray-800' : 'text-black'}`}
         />
         <input
           type="file"
           accept="image/*"
           onChange={handleImageChange}
-          className={`border border-gray-300 rounded px-4 py-2 mb-4 block w-full ${darkMode ? 'text-white bg-gray-800' : ''}`}
+          className={`border border-gray-300 rounded px-4 py-2 mb-4 block w-full ${darkMode ? ' bg-gray-800' : ''}`}
         />
         <div className={`border flex justify-end mb-4 h-8 ${darkMode ? 'text-white bg-gray-800' : ''}`}>
           <span className="mr-2">Dark Mode</span>
