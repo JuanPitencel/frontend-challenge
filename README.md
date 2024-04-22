@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+FrontEnd Challenge, crear "pequeña aplicación" usando NextJs, Tailwind y Typescript, a partir de diseño de figma recibido. 
+Se genera la maqueta acorde al diseño, el mismo consiste en una plantilla de profile. Se agrega funcionalidad a partir del ícono menú, el cual abré un modal con un form para poder ingresar los propios datos e imagenes, y así reutilizar dinámicamente la plantilla.
+
 ## Getting Started
 
 First, run the development server:
