@@ -67,7 +67,7 @@ const About: React.FC = () => {
                     </div>
                   </div>
                   <div className="mt-8">
-                    <p className="mb-4 md:mt-3 text-base font-inter md:font-inter font-light text-center md:text-left">
+                    <p className="mb-4 md:mt-3 text-base font-inter md:font-inter font-light text-center md:text-left text-black">
                       {paragraphText}
                     </p>
                   </div>
