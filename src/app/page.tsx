@@ -40,7 +40,6 @@ const About: React.FC = () => {
     const savedImageSrc = localStorage.getItem('imageSrc') || ''; 
     imageSrcFromLocalStorage = savedImageSrc ? savedImageSrc : ''; 
   }
-  
 
   return (
     <div className={`items-center justify-center h-screen pb-64 ${darkMode ? 'bg-slate-600' : ''}`}>
@@ -82,9 +81,9 @@ const About: React.FC = () => {
             <div className="md:flex md:flex-col md:justify-center md:items-center md:w-[700px] md:h-[820px] md:top-40 md:left-697px">
               <div className="w-full h-full md:w-[673px] md:h-[740px] flex justify-center items-center">
               <img
-                className={`max-w-full max-h-full md:w-[673px] md:h-[740px] sm:h-[309px] ${
-                imageSrc && imageSrcFromLocalStorage ? 'rounded-full' : '' }`}
-                style={{ borderRadius: imageSrc && imageSrcFromLocalStorage ? '30% 15% 30% 15%' : ''}}
+                className={`max-w-full max-h-full md:w-[673px] md:h-[740px] sm:h-[309px] 
+             `}
+                style={{borderRadius: '30% 15% 30% 15%'}}
                 src={imageSrc || '/images/default-image.png'}
                 alt="Angela Smith"
               />
