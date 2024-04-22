@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,16 +22,40 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #FFFFFF; 
 }
+
+.dark-mode {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+body.dark-mode {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: gray;
+}
+
+.toggle-checkbox:focus + .toggle-label {
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}
+.toggle-dot {
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-dot {
+  transform: translateX(100%);
+}
+ /* {
+  border: 1px solid blue;
+} */
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
